@@ -8,7 +8,7 @@ export const ThemeToggle = ({children}) => {
         </ThemeContext.Provider>
     );
 };
-export const ThemeDisplay = () => {
+export const Container = () => {
     const { theme, setTheme } = useContext(ThemeContext);
     return (
         <div style={{ 

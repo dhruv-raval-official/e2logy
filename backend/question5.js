@@ -6,6 +6,6 @@ app.get('/download', (req, res) => {
     if(!fs.existsSync(filePath)){
         return res.status(404).json({error: 'File not found'});
     }
-    res.download(filePath);
+    res.status(200).download(filePath);
 });
 app.listen(3000, () => console.log('Server running on port 3000'));

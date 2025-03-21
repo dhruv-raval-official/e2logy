@@ -14,6 +14,6 @@ app.get('/data', (req, res) => {
             cachedData = data;
             res.json(data);
         })
-        .catch(err => res.status(500).json({ error: 'Failed to fetch data' }));
+        .catch(error => res.status(500).json({ error: 'Failed to fetch data' }));
 });
 app.listen(3000, () => console.log('Server running on port 3000'));

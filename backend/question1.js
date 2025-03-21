@@ -14,7 +14,6 @@ mongoose.connect('mongodb://127.0.0.1:27017/mydb')
     });
 app.post('/users', async (req, res) => {
     try {
-        // const [name, email] = req.body;
         if (!req.body.name || !req.body.email) {
             return res.status(400).json({ error: 'Name and email are required' });
         }

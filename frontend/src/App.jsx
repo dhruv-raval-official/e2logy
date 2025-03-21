@@ -6,7 +6,7 @@ import ToggleText from './questions/question6';
 import Form from './questions/question7';
 import UpdateAddress from './questions/question8';
 import FetchData from './questions/question9';
-import { ThemeToggle, ThemeDisplay } from './questions/question10';
+import { ThemeToggle, Container } from './questions/question10';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <UpdateAddress />
         <FetchData />
         <ThemeToggle>
-          <ThemeDisplay />
+          <Container />
         </ThemeToggle>
       </div>
     </>
